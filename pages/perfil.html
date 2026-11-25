@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil | GarageHub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html"><span aria-hidden="true">G</span>Garage<b>Hub</b></a>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html">Garaje</a></li>
+        <li><a href="#">Buscar taller</a></li>
+        <li><a href="perfil.html" aria-current="page">Perfil</a></li>
+      </ul>
+    </nav>
+    <div class="user"><span class="avatar" role="img" aria-label="Foto de Carlos"></span>Hola, Carlos</div>
+    <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <main class="page">
+    <h1>Mi perfil</h1>
+    <p class="muted">Tu cuenta, a tu manera.</p>
+    <div class="layout layout-perfil">
+      <aside>
+        <section class="panel profile-card">
+          <div class="avatar" role="img" aria-label="Foto de Carlos"></div>
+          <h2>Carlos</h2>
+          <p class="muted">carlos@ejemplo.com</p>
+          <a class="link-accent" href="#">Cambiar foto</a>
+        </section>
+        <section class="panel" aria-labelledby="t-mg">
+          <h2 id="t-mg">Mi garaje</h2>
+          <ul class="list">
+            <li><a href="detalle.html">BMW E36 325i <span class="muted">1994 | 183.240 km</span></a></li>
+            <li><a href="detalle.html">Mazda MX-5 <span class="muted">2003 | 124.509 km</span></a></li>
+          </ul>
+        </section>
+      </aside>
+      <div>
+        <section class="panel" aria-labelledby="t-datos">
+          <h2 id="t-datos">Datos personales</h2>
+          <dl class="data-grid"><div><dt>Nombre</dt><dd>Carlos</dd></div><div><dt>Email</dt><dd>carlos@ejemplo.com</dd></div></dl>
+          <a class="link-accent" href="#">Editar datos</a>
+        </section>
+        <section class="panel" aria-labelledby="t-aj">
+          <h2 id="t-aj">Ajustes de cuenta</h2>
+          <ul class="list">
+            <li><a href="#">Cambiar contraseña</a></li>
+            <li><label>Notificaciones <input type="checkbox" checked></label></li>
+            <li><a href="#">Privacidad</a></li>
+          </ul>
+        </section>
+        <div class="meta-row"><p class="muted">Tu garaje queda guardado. Vuelve cuando quieras para seguir tu historia.</p><a class="btn btn-outline" href="login.html">Cerrar sesión</a></div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><span>GarageHub</span><span>Tu coche. Tu historia.</span></footer>
+</body>
+</html>

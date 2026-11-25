@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir coche | GarageHub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+  <script src="../js/modal.js" defer></script>
+  <script src="../js/validacion.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html"><span aria-hidden="true">G</span>Garage<b>Hub</b></a>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html" aria-current="page">Garaje</a></li>
+        <li><a href="#">Buscar taller</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+    <div class="user"><span class="avatar" role="img" aria-label="Foto de Carlos"></span>Hola, Carlos</div>
+    <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <main class="page">
+    <a class="back" href="../index.html">&larr; Volver</a>
+    <h1>Añadir nuevo vehículo</h1>
+    <p class="muted">El comienzo de una nueva historia en tu garaje.</p>
+    <form class="layout layout-crear" id="form-crear" action="../index.html" novalidate>
+      <section class="form" aria-label="Datos del vehículo">
+        <div class="fields-2">
+          <div class="field">
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca" placeholder="ej. BMW">
+          </div>
+          <div class="field">
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo" placeholder="ej. E36">
+          </div>
+        </div>
+        <div class="fields-3">
+          <div class="field">
+            <label for="anio">Año</label>
+            <input type="number" id="anio" name="anio" placeholder="ej. 1994">
+          </div>
+          <div class="field">
+            <label for="matricula">Matrícula</label>
+            <input type="text" id="matricula" name="matricula" placeholder="ej. 1234 ABC">
+          </div>
+          <div class="field">
+            <label for="km">Kilometraje</label>
+            <input type="number" id="km" name="km" placeholder="ej. 183240">
+          </div>
+        </div>
+        <div class="field">
+          <label for="desc">Descripción</label>
+          <textarea id="desc" name="desc" placeholder="Detalles o notas sobre el coche..."></textarea>
+        </div>
+        <div class="meta-row"><span class="muted">Tu vehículo aparecerá en Mi garaje.</span><button class="btn"
+            type="submit">Guardar vehículo</button></div>
+      </section>
+      <section aria-label="Foto del vehículo">
+        <label class="upload">
+          <input type="file" accept="image/*">
+          <strong>Subir foto del vehículo</strong>
+          <span class="muted">Arrastra una imagen o haz clic aquí</span>
+        </label>
+        <p class="muted">Una buena foto hace que tu coche destaque en el garaje.</p>
+      </section>
+    </form>
+  </main>
+  <footer class="site-footer"><span>GarageHub</span><span>Tu coche. Tu historia.</span></footer>
+</body>
+
+</html>

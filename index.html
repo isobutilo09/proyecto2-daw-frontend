@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi garaje | GarageHub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/menu.js" defer></script>
+  <script src="js/modal.js" defer></script>
+  <script src="js/mockData.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span aria-hidden="true">G</span>Garage<b>Hub</b></a>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Garaje</a></li>
+        <li><a href="#">Buscar taller</a></li>
+        <li><a href="pages/perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+    <div class="user"><span class="avatar" role="img" aria-label="Foto de Carlos"></span>Hola, Carlos</div>
+    <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <main class="page">
+    <section aria-labelledby="t-garaje">
+      <div class="page-head">
+        <div>
+          <h1 id="t-garaje">Mi garaje <span class="badge" id="contador">2 coches</span></h1>
+          <p class="muted">Tus coches, sus historias. Todo en un mismo lugar.</p>
+        </div>
+        <a class="btn" href="pages/crear.html">+ Añadir coche</a>
+      </div>
+      <div class="field buscador">
+        <label for="buscador">Buscar coche</label>
+        <input type="search" id="buscador" name="buscador" placeholder="Marca, modelo o año..." autocomplete="off">
+      </div>
+      <div class="cards" aria-live="polite"></div>
+      <p class="muted" id="sin-resultados" hidden></p>
+      <div class="meta-row muted"><span id="resumen"></span><span>Una historia para cada coche</span></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>GarageHub</span><span>Tu coche. Tu historia.</span></footer>
+</body>
+</html>

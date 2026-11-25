@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW E36 325i | GarageHub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/menu.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html"><span aria-hidden="true">G</span>Garage<b>Hub</b></a>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="../index.html" aria-current="page">Garaje</a></li>
+        <li><a href="#">Buscar taller</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+      </ul>
+    </nav>
+    <div class="user"><span class="avatar" role="img" aria-label="Foto de Carlos"></span>Hola, Carlos</div>
+    <button class="nav-toggle" type="button" aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+  </header>
+  <main class="page">
+    <a class="back" href="../index.html">&larr; Mi garaje</a>
+    <h1>BMW E36 325i</h1>
+    <div class="layout layout-detalle">
+      <section aria-label="Datos del vehículo">
+        <img class="big-img" src="../assets/img/bmw-e36.jpg" alt="BMW E36 325i gris" width="800" height="500">
+        <div class="stats">
+          <div class="stat"><span class="muted">Año</span><strong>1994</strong></div>
+          <div class="stat"><span class="muted">Kilometraje</span><strong>183.240 km</strong></div>
+        </div>
+      </section>
+      <aside>
+        <section class="panel" aria-labelledby="t-hist">
+          <h2 id="t-hist" class="muted">Historial de mantenimiento</h2>
+          <ul class="list">
+            <li><article><h3>Cambio de aceite</h3><p class="muted">163.000 km</p></article><span>120 €</span></li>
+            <li><article><h3>Cambio de neumáticos</h3><p class="muted">172.000 km</p></article><span>480 €</span></li>
+          </ul>
+        </section>
+        <section class="panel" aria-labelledby="t-mods">
+          <h2 id="t-mods" class="muted">Modificaciones instaladas</h2>
+          <ul class="chips"><li>Suspensión Bilstein</li><li>Escape deportivo</li><li>Llantas BBS</li></ul>
+          <a class="btn btn-outline btn-block" href="crear.html">+ Añadir modificación</a>
+        </section>
+      </aside>
+    </div>
+  </main>
+  <footer class="site-footer"><span>GarageHub</span><span>Tu coche. Tu historia.</span></footer>
+</body>
+</html>

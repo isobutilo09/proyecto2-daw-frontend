@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta | GarageHub</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/modal.js" defer></script>
+  <script src="../js/validacion.js" defer></script>
+</head>
+<body>
+  <div class="auth">
+    <aside class="auth-hero">
+      <a class="logo" href="../index.html"><span aria-hidden="true">G</span>Garage<b>Hub</b></a>
+      <div>
+        <h2>Tu coche. <em>Tu historia.</em></h2>
+        <p class="muted">Cada kilómetro cuenta. Guarda tus vehículos, su mantenimiento y todo lo que les hace únicos.</p>
+      </div>
+    </aside>
+    <main class="auth-form">
+      <p class="auth-top">¿Ya tienes cuenta? <a class="link-accent" href="login.html">Inicia sesión</a></p>
+      <div>
+        <h1>Crear una cuenta</h1>
+        <p class="muted">Empieza la historia de tu garaje.</p>
+      </div>
+      <form class="form" id="form-registro" action="login.html" novalidate>
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+        </div>
+        <div class="field">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required minlength="8">
+        </div>
+        <p class="muted">Usa al menos 8 caracteres, con letras y números.</p>
+        <div class="field">
+          <label for="password2">Confirmar contraseña</label>
+          <input type="password" id="password2" name="password2" placeholder="••••••••" required>
+        </div>
+        <label class="check"><input type="checkbox" id="terminos" name="terminos" required> Acepto los términos y condiciones y la política de privacidad.</label>
+        <button class="btn btn-block" type="submit">Crear cuenta</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
